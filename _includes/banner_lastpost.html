@@ -1,0 +1,33 @@
+<!-- Banner -->
+  <section id="banner">
+    <div class="content">
+    {% assign post = site.posts.first %}
+      <header>
+        <a href="{{ site.baseurl }}{{ post.url }}"><h1>{{ post.title }}</h1></a>
+        <p>{% assign m = post.date | date: "%-m" %}
+        {{ post.date | date: "%-d" }}
+        {% case m %}
+            {% when '1' %}Ocak
+            {% when '2' %}Şubat
+            {% when '3' %}Mart
+            {% when '4' %}Nisan
+            {% when '5' %}Mayıs
+            {% when '6' %}Haziran
+            {% when '7' %}Temmuz
+            {% when '8' %}Ağustos
+            {% when '9' %}Eylül
+            {% when '10' %}Ekim
+            {% when '11' %}Kasım
+            {% when '12' %}Aralık
+          {% endcase %}
+        {{ post.date | date: "%Y" }}</p>
+      </header>
+      <p>{{ post.excerpt }}</p>
+      <ul class="actions">
+        <li><a href="{{ site.baseurl }}{{ post.url }}" class="button big">Devamı</a></li>
+      </ul>
+    </div>
+    <span class="image object">
+      <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.image }}" alt="" /></a>
+    </span>
+  </section>

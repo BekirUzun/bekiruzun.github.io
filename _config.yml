@@ -1,0 +1,44 @@
+# Site settings
+title: Bekir Uzun
+author: Bekir Uzun
+subtitle: Basit bir blog
+email: # example@example.com
+description: Merhaba ben Bekir. Bilgisayar mühendisliği okuyorum ve kodlamayı seviyorum.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+exclude:
+  - node_modules
+
+# Pagination
+paginate: 8 # even numbers prefered for layout
+paginate_path: "/sayfa-:num/"
+
+# Social settings
+500px_url:
+facebook_url: https://facebook.com/BekirUzun0
+github_url: https://github.com/BekirUzun
+gitlab_url: 
+googleplus_url: 
+instagram_url: 
+linkedin_url: https://www.linkedin.com/in/bekiruzun
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/BekirUzn
+
+# Build settings
+markdown: kramdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'

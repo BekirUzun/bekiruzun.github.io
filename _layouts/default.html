@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                
+                {% include header.html %}
+                {% if paginator.page == 1 %}
+                    {% include banner_lastpost.html %}
+                {% endif %}
+
+                {{ content }}
+
+            </div>
+        </div>
+
+        {% include sidebar.html %}
+
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

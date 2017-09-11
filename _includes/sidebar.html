@@ -1,0 +1,49 @@
+<!-- Sidebar -->
+<div id="sidebar">
+  <div class="inner">
+
+    <!-- Search -->
+    <section id="search" class="alt">
+      <form method="get" action="">
+        <input type="text" name="q" id="query" placeholder="Arama" />
+      </form>
+    </section>
+
+    <!-- Menu -->
+    <nav id="menu">
+      <header class="major">
+        <h2>Menü</h2>
+      </header>
+      <ul>
+        <li><a href="{{ '' | absolute_url }}">Anasayfa</a></li>
+        <li><a href="{{ 'hakkimda.html' | absolute_url }}">Hakkımda</a></li>
+      </ul>
+    </nav>
+
+    <!-- Section -->
+    <section>
+      <header class="major">
+        <h2>Son Yazılar</h2>
+      </header>
+      <div class="mini-posts">
+        <ul class="latest">
+          {% for post in site.posts limit:8 %}
+          <li class="fa-bookmark"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% if site.posts.size > 8 %}
+      <ul class="actions">
+        <li><a href="/sayfa-2" class="button">DİĞER YAZILAR</a></li>
+      </ul>
+      {% endif %}
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">&copy; Bekir Uzun tarafından ❤ ile kodlanmıştır. İçerik, aksi belirtilmedikçe <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Atıf 4.0 Uluslararası Lisansı</a> ile lisanslanmıştır.
+        <br><a href="https://github.com/BekirUzun/bekiruzun.github.io/#credits">Emeği Geçenler</a>.
+      </footer>
+
+    </div>
+  </div>
