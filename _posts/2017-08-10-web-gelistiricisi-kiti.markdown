@@ -32,8 +32,8 @@ Daha fazla Creative Commons lisansıyla lisanslanmış içerik bulmak için Crea
 # 8) [CSS Minifier (https://cssminifier.com/)](https://cssminifier.com/)
 Son dokunuşları yaparken CSS dosyalarınızı harika bir şekilde küçülten bu siteyi denemelisiniz. Yorum satırlarını bile kaldırıyor!
 
-#9) [PNG Crush (http://pngcrush.com/)](http://pngcrush.com/)
+# 9) [PNG Crush (http://pngcrush.com/)](http://pngcrush.com/)
 Bu büyülü site ise png resimlerinizi inanılmaz ölçüde küçültüyor. İlk denememde 15.504 bayt olan favicon dosyamı 464 bayt’a düşürdü. %97 oranında boyuttan tasarruf. Şaka mı yapıyorsun?
 
-#10) [CloudFlare (https://www.cloudflare.com/)](https://www.cloudflare.com/)
+# 10) [CloudFlare (https://www.cloudflare.com/)](https://www.cloudflare.com/)
 Sağladıkları CDN, sürekli aktif website, önbellek hizmeti, DDoS saldırı koruması, güvenli internet protokolü ve daha nice özellikleri ile CloudFlare bir harika. İşin güzeli her şeyi ücretsiz sunuyorlar (elbette kurumsal paketleri de var ama merak etmeyin komisyon falan almıyorum 🙂 ). 
