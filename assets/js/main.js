@@ -276,10 +276,10 @@
 		// autoFirst: true,
 		search: true,
 		list: [ 
-		{ label: "Localhost'a mobil cihazlardan erişme", value: "http://localhost:4000/2017/08/15/localhosta-diger-cihazlardan-erisim.html" },
-		{ label: "Web Geliştiricisi Kiti", value: "http://localhost:4000/2017/08/10/web-gelistiricisi-kiti.html" },
-		{ label: "🌍 URL’de Emoji Kullanmak 🙊", value: "http://localhost:4000/2017/08/03/urlde-emoji-kullanmak.html" },
-		{ label: "Merhaba Dünya!", value: "http://localhost:4000/2017/08/01/merhaba-dunya.html" } 
+		{ label: "Localhost'a mobil cihazlardan erişme", value: "https://bekiruzun.github.io/2017/08/15/localhosta-diger-cihazlardan-erisim.html" },
+		{ label: "Web Geliştiricisi Kiti", value: "https://bekiruzun.github.io/2017/08/10/web-gelistiricisi-kiti.html" },
+		{ label: "🌍 URL’de Emoji Kullanmak 🙊", value: "https://bekiruzun.github.io/2017/08/03/urlde-emoji-kullanmak.html" },
+		{ label: "Merhaba Dünya!", value: "https://bekiruzun.github.io/2017/08/01/merhaba-dunya.html" } 
 		]
 	});
 
