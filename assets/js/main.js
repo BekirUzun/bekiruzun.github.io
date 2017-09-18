@@ -269,18 +269,22 @@
 		});
 	});
 
-	//awesomplete
-	var searchInput = document.getElementById("search");
+	//awesomplete search input
+	$.getJSON("/assets/js/search.json", function(result){
+		var postList = [];
+		for (var i = 0; i < result.length; i++) {
+			postList[i] = {};
+			postList[i].label = result[i].title;
+			postList[i].value = result[i].url;
+		}
 
-	var search = new Awesomplete(searchInput, {
-		// autoFirst: true,
-		search: true,
-		list: [ 
-		{ label: "Localhost'a mobil cihazlardan erişme", value: "https://bekiruzun.github.io/2017/08/15/localhosta-diger-cihazlardan-erisim.html" },
-		{ label: "Web Geliştiricisi Kiti", value: "https://bekiruzun.github.io/2017/08/10/web-gelistiricisi-kiti.html" },
-		{ label: "🌍 URL’de Emoji Kullanmak 🙊", value: "https://bekiruzun.github.io/2017/08/03/urlde-emoji-kullanmak.html" },
-		{ label: "Merhaba Dünya!", value: "https://bekiruzun.github.io/2017/08/01/merhaba-dunya.html" } 
-		]
+		var searchInput = document.getElementById("search");
+
+		var search = new Awesomplete(searchInput, {
+			// autoFirst: true,
+			search: true,
+			list: postList
+		});
 	});
 
 })(jQuery);

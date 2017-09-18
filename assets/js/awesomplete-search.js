@@ -168,7 +168,7 @@ _.prototype = {
 	},
 
 	close: function (o) {
-		if (this.search || o.reason === "blur") {
+		if (this.search && o.reason === "blur") {
 			return
 		}
 
@@ -315,10 +315,14 @@ _.prototype = {
 			});
 
 			if (this.ul.children.length === 0) {
-
 				this.status.textContent = "No results found";
 
-				this.close({ reason: "nomatches" });
+				if (this.search) {
+					this.open();
+					this.ul.innerHTML = '<li class="status">Hiçbir sonuç bulunamadı :(</li>';
+				} else {
+					this.close({ reason: "nomatches" });
+				}
 
 			} else {
 				this.open();

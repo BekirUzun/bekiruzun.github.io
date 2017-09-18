@@ -4264,7 +4264,7 @@
 	transform: rotate(45deg);
 }
 
-.awesomplete > ul > li {
+.awesomplete > ul > li:not(.status) {
 	line-height: 2em;
 	position: relative;
 	padding: .2em .5em;
@@ -4275,7 +4275,13 @@
 	border-top: none;
 }
 
-.awesomplete > ul > li:hover {
+.awesomplete > ul > li.status {
+	line-height: 2em;
+	position: relative;
+	padding: .2em .5em;
+}
+
+.awesomplete > ul > li:not(.status):hover {
 	background: #f56a6a;
 	color: black;
 }
