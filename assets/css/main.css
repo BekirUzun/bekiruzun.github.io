@@ -4265,6 +4265,7 @@
 }
 
 .awesomplete > ul > li:not(.status) {
+	font-size: 1.1em;
 	line-height: 2em;
 	position: relative;
 	padding: .2em .5em;
@@ -4276,6 +4277,7 @@
 }
 
 .awesomplete > ul > li.status {
+	font-size: 1.1em;
 	line-height: 2em;
 	position: relative;
 	padding: .2em .5em;
@@ -4286,13 +4288,12 @@
 	color: black;
 }
 
-.awesomplete > ul > li[aria-selected="true"] {
+.awesomplete > ul > li[aria-selected="true"]:not(.status) {
 	background: #f56a6a;
 	color: white;
 }
 
 .awesomplete > ul > li > a {
-	font-size: 1.1em;
 	display: inline-block;
 	width: 100%;
 	height: 100%;

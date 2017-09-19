@@ -256,12 +256,6 @@ _.prototype = {
 	},
 
 	select: function (selected, origin) {
-		if (this.search) {
-			$.fire(this.input, "awesomplete-selectcomplete", {
-				text: suggestion
-			});
-			return;
-		}
 
 		if (selected) {
 			this.index = $.siblingIndex(selected);
@@ -278,11 +272,17 @@ _.prototype = {
 			});
 
 			if (allowed) {
-				this.replace(suggestion);
-				this.close({ reason: "select" });
-				$.fire(this.input, "awesomplete-selectcomplete", {
-					text: suggestion
-				});
+
+				if (this.search) {
+					//redirect page on select
+					window.location.href = suggestion.value;
+				} else {
+					this.replace(suggestion);
+					this.close({ reason: "select" });
+					$.fire(this.input, "awesomplete-selectcomplete", {
+						text: suggestion
+					});
+				}
 			}
 		}
 	},
