@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "Localhost’a Diğer Cihazlardan Erişim"
 date:   2017-08-15 22:00:00 -0600
 image: /images/post/localhost.jpg

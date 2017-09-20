@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "Merhaba Dünya!"
 date:   2017-08-01 22:00:00 -0600
 image: /images/post/hello-world.jpg

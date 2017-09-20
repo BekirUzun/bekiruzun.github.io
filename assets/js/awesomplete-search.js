@@ -3,14 +3,12 @@
  * Because there weren’t enough autocomplete scripts in the world? Because I’m completely insane and have NIH syndrome? Probably both. :P
  * @author Lea Verou http://leaverou.github.io/awesomplete
  * MIT license
- *
- * Modified by Bekir Uzun http://github.com/BekirUzun to use with simple search box
  */
 
- (function () {
+(function () {
 
- 	var _ = function (input, o) {
- 		var me = this;
+var _ = function (input, o) {
+ 	var me = this;
 
     // Keep track of number of instances for unique IDs
     Awesomplete.count = (Awesomplete.count || 0) + 1;
@@ -169,7 +167,8 @@ _.prototype = {
 
 	close: function (o) {
 		if (this.search && o.reason === "blur") {
-			return
+			//do not close list on blur if its search box
+			return;
 		}
 
 		if (!this.opened) {
@@ -272,10 +271,17 @@ _.prototype = {
 			});
 
 			if (allowed) {
-
 				if (this.search) {
-					//redirect page on select
+					//redirect page on select if its search box
 					window.location.href = suggestion.value;
+					console.log(suggestion.value.charAt(0));
+					if (suggestion.value.charAt(0) === '#') {
+						//navigating through same page
+						this.close({ reason: "select" });
+						$.fire(this.input, "awesomplete-selectcomplete", {
+							text: suggestion
+						});
+					}
 				} else {
 					this.replace(suggestion);
 					this.close({ reason: "select" });
@@ -318,6 +324,7 @@ _.prototype = {
 				this.status.textContent = "No results found";
 
 				if (this.search) {
+					//write a status message if nothing found
 					this.open();
 					this.ul.innerHTML = '<li class="status">Hiçbir sonuç bulunamadı :(</li>';
 				} else {
@@ -362,6 +369,7 @@ _.ITEM = function (text, input, item_id) {
 	var html = input.trim() === "" ? text : text.replace(RegExp($.regExpEscape(input.trim()), "gi"), "<mark>$&</mark>");
 
 	if (this.search) {
+		//add an anchor link
 		var link = text.value;
 		var anchor = '<a href="' + link + '">'+html+'</a>';
 		html = anchor;

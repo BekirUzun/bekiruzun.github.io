@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "Web Geliştiricisi Kiti"
 date:   2017-08-10 22:00:00 -0600
 image: /images/post/skel.jpg
