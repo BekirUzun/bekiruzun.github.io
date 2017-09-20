@@ -16,6 +16,8 @@ exclude:
   - node_modules
   - bkp
 
+permalink: /:title
+
 # Pagination
 paginate: 8 # even numbers prefered for layout
 paginate_path: "/sayfa-:num/"
