@@ -19,6 +19,18 @@
 
 					{{ content }}
 
+					<div class="nav-links">
+						{% if page.previous %}
+						<div class="nav-previous">
+							<a href="{{ page.previous.url }}" rel="prev">{{ page.previous.title }}</a>
+						</div>
+						{% endif %}
+						{% if page.next %}
+						<div class="nav-next">
+							<a href="{{ page.next.url }}" rel="next">{{ page.next.title }}</a>
+						</div>
+						{% endif %}
+					</div>
 				</section>
 
 				

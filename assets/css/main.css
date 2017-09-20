@@ -4318,3 +4318,38 @@
 	background: #fff;
 	color: inherit;
 }
+
+.nav-links {
+	padding: 0 0 1em 0;
+	border-bottom: 1px solid #eee;
+	overflow: auto; 
+}
+
+.nav-previous {
+	float: left;
+}
+
+.nav-previous > a {
+	padding: 0 0 0 0.25em
+}
+
+.nav-next {
+	float: right;
+}
+
+.nav-next > a {
+	padding: 0 0.25em 0 0;
+}
+
+.nav-previous:before, .nav-next:after{
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+}
+.nav-previous:before{
+	content: "\f060";
+}
+
+.nav-next:after {
+	content: "\f061";
+}
