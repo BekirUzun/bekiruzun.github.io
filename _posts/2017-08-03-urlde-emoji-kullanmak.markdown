@@ -3,7 +3,7 @@ layout: post
 title:  "🌍 URL’de Emoji Kullanmak 🙊"
 date:   2017-08-03 22:00:00 -0600
 image: /images/post/emoji.jpg
-tags: web
+categories: web
 excerpt_separator: <!--more-->
 ---
 

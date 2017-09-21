@@ -1,0 +1,31 @@
+---
+layout: page
+permalink: /etiketler/
+title: Etiketler
+---
+
+{% assign is_first = 'true' %}
+<div class="row">
+	{% for category in site.categories %}
+	{% capture category_name %}{{ category | first }}{% endcapture %}
+
+	{% if is_first == 'true' %}
+	<div  id="{{ category_name | slugize }}" class="6u 12u$(small)">
+	{% assign is_first = 'false' %}
+	{% else %}
+	<div  id="{{ category_name | slugize }}" class="6u$ 12u$(small)">
+	{% assign is_first = 'true' %}
+	{% endif %}
+		<h3>{{ category_name | capitalize}}</h3>
+		<p>
+			<ul>
+				{% for post in site.categories[category_name] %}
+				<li>
+					<a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</p>
+	</div>
+	{% endfor %}
+</div>

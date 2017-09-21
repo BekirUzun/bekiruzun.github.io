@@ -16,11 +16,11 @@
       </header>
       <ul>
         <li><a href="{{ '' | absolute_url }}">Anasayfa</a></li>
-        <li><a href="{{ 'hakkimda.html' | absolute_url }}">Hakkımda</a></li>
+        <li><a href="{{ 'hakkimda' | absolute_url }}">Hakkımda</a></li>
       </ul>
     </nav>
 
-    <!-- Section -->
+    <!-- Latest posts -->
     <section>
       <header class="major">
         <h2>Son Yazılar</h2>
@@ -37,6 +37,24 @@
         <li><a href="/sayfa-2" class="button">DİĞER YAZILAR</a></li>
       </ul>
       {% endif %}
+    </section>
+
+    <!-- Categories -->
+    <section>
+      <header class="major">
+        <h2>Etiketler</h2>
+      </header>
+      <ul class="tags">
+        {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        {% capture post_count %}{{ category | last | size }}{% endcapture %}
+        {% assign url = category_name | replace: 'ç', 'c' | replace: 'ı', 'i' | replace: 'ö', 'o' 
+        | replace: 'ğ', 'g' | replace: 'ş', 's' | replace: 'ü', 'u' | prepend: '/etiketler/' %}
+
+        <li><a href="{{ url }}">{{ category_name | capitalize }}<span>{{ post_count }}</span></a></li>
+
+        {% endfor %}
+      </ul>
     </section>
 
     <!-- Footer -->

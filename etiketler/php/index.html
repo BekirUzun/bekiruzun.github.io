@@ -1,0 +1,42 @@
+---
+layout: page
+permalink: /etiketler/php/
+title: "\"Php\" ile Etiketlenmiş Yazılar"
+---
+
+<section>
+	<div class="posts">
+		{% for post in site.categories['php'] %}
+
+			<article>
+				{% if post.image %}
+					<a href="{{ site.baseurl }}{{ post.url }}" class="image"><img src="{{ post.image }}" alt="{{ post.title }}" /></a>
+				{% endif %}
+				<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+				<p>
+				{% assign m = post.date | date: "%-m" %}
+				{{ post.date | date: "%-d" }}
+				{% case m %}
+  					{% when '1' %}Ocak
+  					{% when '2' %}Şubat
+  					{% when '3' %}Mart
+  					{% when '4' %}Nisan
+  					{% when '5' %}Mayıs
+  					{% when '6' %}Haziran
+  					{% when '7' %}Temmuz
+  					{% when '8' %}Ağustos
+  					{% when '9' %}Eylül
+  					{% when '10' %}Ekim
+  					{% when '11' %}Kasım
+  					{% when '12' %}Aralık
+  				{% endcase %}
+				{{ post.date | date: "%Y" }}
+				</p>
+				{{ post.excerpt }}
+				<ul class="actions">
+					<li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Devamı...</a></li>
+				</ul>
+			</article>
+		{% endfor %}
+	</div>
+</section>
