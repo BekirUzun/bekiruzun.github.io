@@ -105,48 +105,20 @@
 				event.preventDefault();
 				event.stopPropagation();
 
-				// Toggle.
-				$sidebar.toggleClass('inactive');
+				// No more Toggle class
+				// $sidebar.toggleClass('inactive');
+
+				//Directly change css
+				if ($sidebar.css('margin-left').charAt(0) === '-' ) {
+					//its closed/inactive. lets open it again
+					$sidebar.css('margin-left', '0');
+				} else {
+					$sidebar.css('margin-left', '-24em');
+				}
 
 			});
 		}
 
-		// Events.
-
-		// Link clicks.
-		$sidebar.on('click', 'a', function(event) {
-
-			// >large? Bail.
-			if (!skel.breakpoint('large').active)
-				return;
-
-			// Vars.
-			var $a = $(this),
-			href = $a.attr('href'),
-			target = $a.attr('target');
-
-			// Prevent default.
-			event.preventDefault();
-			event.stopPropagation();
-
-			// Check URL.
-			if (!href || href == '#' || href == '')
-				return;
-
-			// Hide sidebar.
-			$sidebar.addClass('inactive');
-
-			// Redirect to href.
-			setTimeout(function() {
-
-				if (target == '_blank')
-					window.open(href);
-				else
-					window.location.href = href;
-
-			}, 500);
-
-		});
 
 		// Prevent certain events inside the panel from bubbling.
 		$sidebar.on('click touchend touchstart touchmove', function(event) {
@@ -168,7 +140,8 @@
 				return;
 
 			// Deactivate.
-			$sidebar.addClass('inactive');
+			// $sidebar.addClass('inactive');
+			$sidebar.css('margin-left', '-24em');
 
 		});
 

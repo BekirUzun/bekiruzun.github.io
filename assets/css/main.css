@@ -2548,7 +2548,8 @@
 	img {
 		border-radius: 0.375em;
 		display: block;
-		max-width: 100%
+		max-width: 100%;
+		border: 1px solid lightgray;
 	}
 
 	.image {
@@ -3713,9 +3714,9 @@
 				width: inherit;
 			}
 
-		#sidebar.inactive {
+		/*#sidebar.inactive {
 			margin-left: -26em;
-		}
+		}*/
 
 		@media screen and (max-width: 1680px) {
 
@@ -3746,9 +3747,9 @@
 						font-size: 1.5rem;
 					}
 
-				#sidebar.inactive {
+				/*#sidebar.inactive {
 					margin-left: -24em;
-				}
+				}*/
 
 		}
 
@@ -3763,8 +3764,13 @@
 				z-index: 10000;
 			}
 
-				#sidebar.inactive {
+				/*#sidebar.inactive {
 					box-shadow: none;
+				}*/
+
+				#sidebar {
+					box-shadow: none;
+					margin-left: -24em;
 				}
 
 				#sidebar > .inner {
