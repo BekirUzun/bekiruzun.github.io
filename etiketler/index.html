@@ -6,7 +6,7 @@ title: Etiketler
 
 {% assign is_first = 'true' %}
 <div class="row">
-	{% for category in site.categories %}
+	{% for category in site.tags %}
 	{% capture category_name %}{{ category | first }}{% endcapture %}
 
 	{% if is_first == 'true' %}
@@ -19,7 +19,7 @@ title: Etiketler
 		<h3>{{ category_name | capitalize}}</h3>
 		<p>
 			<ul>
-				{% for post in site.categories[category_name] %}
+				{% for post in site.tags[category_name] %}
 				<li>
 					<a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
 				</li>

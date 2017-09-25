@@ -39,13 +39,13 @@
       {% endif %}
     </section>
 
-    <!-- Categories -->
+    <!-- Tags -->
     <section>
       <header class="major">
         <h2>Etiketler</h2>
       </header>
       <ul class="tags">
-        {% for category in site.categories %}
+        {% for category in site.tags %}
         {% capture category_name %}{{ category | first }}{% endcapture %}
         {% capture post_count %}{{ category | last | size }}{% endcapture %}
         {% assign url = category_name | replace: 'ç', 'c' | replace: 'ı', 'i' | replace: 'ö', 'o' 

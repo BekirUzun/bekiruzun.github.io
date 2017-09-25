@@ -4460,3 +4460,13 @@
 	-o-transition-property: padding, max-width;
 	transition-property: padding, max-width;
 }
+
+.post.main {
+	margin: 0 0 2.5em 0;
+}
+.post-title {
+    margin: 0;
+}
+.post-info {
+    color: rgb(127, 136, 143);
+}

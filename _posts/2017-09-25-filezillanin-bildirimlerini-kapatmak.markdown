@@ -3,7 +3,7 @@ layout: post
 title:  "FileZilla'nın Bildirimlerini Kapatmak"
 date:   2017-09-24 22:00:00 -0600
 image: /images/post/filezilla.jpg
-categories: [web]
+tags: [web]
 excerpt_separator: <!--more-->
 ---
 
