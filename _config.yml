@@ -1,7 +1,7 @@
 # Site settings
 title: Bekir Uzun
 author: Bekir Uzun
-subtitle: Basit bir blog
+subtitle: 
 email: # example@example.com
 description: Merhaba ben Bekir. Bilgisayar mühendisliği okuyorum ve kodlamayı seviyorum.
 baseurl: "" # the subpath of your site, e.g. /blog
