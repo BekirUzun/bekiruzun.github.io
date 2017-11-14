@@ -19,31 +19,47 @@
 							{% assign m = page.date | date: "%-m" %}
 							{{ page.date | date: "%-d" }}
 							{% case m %}
-  								{% when '1' %}Ocak
-  								{% when '2' %}Şubat
-  								{% when '3' %}Mart
-  								{% when '4' %}Nisan
-  								{% when '5' %}Mayıs
-  								{% when '6' %}Haziran
-  								% when '7' %}Temmuz
-  								{% when '8' %}Ağustos
-  								{% when '9' %}Eylül
-  								{% when '10' %}Ekim
-  								{% when '11' %}Kasım
-  								{% when '12' %}Aralık
-  							{% endcase %}
+							{% when '1' %}Ocak
+							{% when '2' %}Şubat
+							{% when '3' %}Mart
+							{% when '4' %}Nisan
+							{% when '5' %}Mayıs
+							{% when '6' %}Haziran
+							% when '7' %}Temmuz
+							{% when '8' %}Ağustos
+							{% when '9' %}Eylül
+							{% when '10' %}Ekim
+							{% when '11' %}Kasım
+							{% when '12' %}Aralık
+							{% endcase %}
 							{{ page.date | date: "%Y" }}, 
 							Etiketler: &nbsp;
 							{%- if page.tags -%}
-								{%- for tag in page.tags -%}
-									<a href="/etiketler/{{ tag }}">{{ tag | capitalize }}</a>
-									{% unless forloop.last %} - {% endunless %}
-								{%- endfor -%}
+							{%- for tag in page.tags -%}
+							<a href="/etiketler/{{ tag }}">{{ tag | capitalize }}</a>
+							{% unless forloop.last %} - {% endunless %}
+							{%- endfor -%}
 							{%- endif -%}
 						</div>
 					</header>
 
 					{{ content }}
+
+					<div class="share-links">
+						Share :
+						<a  href="whatsapp://send?text={{ page.title }} - {{ page.url | absolute_url }}">
+							Whatsapp
+						</a> 
+						<a href="https://twitter.com/intent/tweet?text={{ page.title }} - {{ page.url | absolute_url }}" target="_blank">
+							Twitter
+						</a> 
+						<a   href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank">
+							Faceboook
+						</a> 
+						<a href="https://www.tumblr.com/widgets/share/tool?posttype=link&content={{ page.url | absolute_url }}&canonicalUrl={{ page.url | absolute_url }}" target="_blank">
+							Tumblr
+						</a>
+					</div>
 
 					<div class="nav-links">
 						{% if page.previous %}

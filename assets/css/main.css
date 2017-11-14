@@ -4470,3 +4470,11 @@
 .post-info {
     color: rgb(127, 136, 143);
 }
+
+.share-links {
+	margin: 0 0 1rem 0;
+}
+
+.share-links a {
+    margin-right: 0.5em;
+}
