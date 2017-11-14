@@ -260,4 +260,6 @@
 		});
 	});
 
+	$sidebar.trigger('resize.sidebar-lock');
+
 })(jQuery);
