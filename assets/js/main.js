@@ -202,6 +202,8 @@
 					.css('top', -1 * x);
 
 				}
+				window.scrollTo(window.scrollX, window.scrollY - 1);
+				window.scrollTo(window.scrollX, window.scrollY + 1);
 
 			})
 			.on('resize.sidebar-lock', function() {
@@ -259,7 +261,9 @@
 			list: postList
 		});
 	});
-
 	$sidebar.trigger('resize.sidebar-lock');
+	window.scrollTo(window.scrollX, window.scrollY - 1);
+	window.scrollTo(window.scrollX, window.scrollY + 1);
+
 
 })(jQuery);
