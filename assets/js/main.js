@@ -216,8 +216,12 @@
 			})
 			.trigger('resize.sidebar-lock');
 
-			window.scrollTo(window.scrollX, window.scrollY - 1);
-			window.scrollTo(window.scrollX, window.scrollY + 1);
+			// <=small 
+			// if (skel.breakpoint('small').active) {
+			if (skel.vars.os == 'android' && skel.vars.browser == 'chrome') {
+				window.scrollTo(window.scrollX, window.scrollY - 1);
+				window.scrollTo(window.scrollX, window.scrollY + 1);
+			}
 
 		});
 
