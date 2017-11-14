@@ -4328,7 +4328,11 @@
 .nav-links {
 	padding: 0 0 1em 0;
 	border-bottom: 1px solid #eee;
-	overflow: auto; 
+	overflow: auto;
+}
+
+.nav-links div {
+	width: 50%;
 }
 
 .nav-previous {
@@ -4341,6 +4345,7 @@
 
 .nav-next {
 	float: right;
+	text-align: right;
 }
 
 .nav-next > a {
@@ -4509,7 +4514,7 @@
 }
 
 .share-links a .fa {
-	margin-right: 0.5em;
+	margin-right: 0.25em;
 	border-right: 1px dotted white;
 	padding-right: 0.5em;
 	line-height: 2em;
