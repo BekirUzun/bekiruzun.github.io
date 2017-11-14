@@ -46,19 +46,29 @@
 					{{ content }}
 
 					<div class="share-links">
-						Share :
-						<a  href="whatsapp://send?text={{ page.title }} - {{ page.url | absolute_url }}">
-							Whatsapp
-						</a> 
-						<a href="https://twitter.com/intent/tweet?text={{ page.title }} - {{ page.url | absolute_url }}" target="_blank">
-							Twitter
-						</a> 
-						<a   href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank">
-							Faceboook
-						</a> 
-						<a href="https://www.tumblr.com/widgets/share/tool?posttype=link&content={{ page.url | absolute_url }}&canonicalUrl={{ page.url | absolute_url }}" target="_blank">
-							Tumblr
-						</a>
+						<h3>Paylaş</h3>
+						<ul>
+							<li>
+								<a  class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank">
+									<i class="fa fa-facebook" aria-hidden="true"></i> Faceboook
+								</a>	
+							</li>
+							<li>
+								<a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }} - {{ page.url | absolute_url }}" target="_blank">
+									<i class="fa fa-twitter aria-hidden="true"></i> Twitter
+								</a>
+							</li>
+							<li>
+								<a class="whatsapp" href="whatsapp://send?text={{ page.title }} - {{ page.url | absolute_url }}">
+									<i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp
+								</a>
+							</li>
+							<li>
+								<a class="tumblr" href="https://www.tumblr.com/widgets/share/tool?posttype=link&content={{ page.url | absolute_url }}&canonicalUrl={{ page.url | absolute_url }}" target="_blank">
+									<i class="fa fa-tumblr" aria-hidden="true"></i> Tumblr
+								</a>
+							</li>
+						</ul>
 					</div>
 
 					<div class="nav-links">

@@ -4473,8 +4473,74 @@
 
 .share-links {
 	margin: 0 0 1rem 0;
+	line-height: 2em;
+}
+
+.share-links h3 {
+	margin: 0 0 0.25em 0;
+	display: inline-block;
+}
+.share-links h3::before {
+	content: "";
+	display: block;
+	width: 100%;
+    border-top: 1px solid grey;
+    min-width: 30px;
+	margin-bottom: 0.5em;
+}
+
+.share-links ul {
+	padding-left: 0;
+}
+
+.share-links li  {
+	display: inline-block;
+	list-style: none !important;
 }
 
 .share-links a {
-    margin-right: 0.5em;
+    padding: 0.25em 0.5em;
+    height: 2em;
+    line-height: 2em;
+    color: white !important;
+    border-bottom: none !important;
+    transition: background-color 0.2s;
+    border-radius: 3px;
+}
+
+.share-links a .fa {
+	margin-right: 0.5em;
+	border-right: 1px dotted white;
+	padding-right: 0.5em;
+	line-height: 2em;
+	font-size: 1.33333333em;
+	vertical-align: -5%;
+}
+
+a.twitter {
+	background-color: #55acee;
+}
+a.twitter:hover {
+	background-color: #65bcfe;
+}
+
+a.facebook {
+	background-color: #3b5998;
+}
+a.facebook:hover {
+	background-color: #4b69a8;
+}
+
+a.whatsapp {
+	background-color: #4dc247;
+}
+a.whatsapp:hover {
+	background-color: #5dd257;
+}
+
+a.tumblr {
+	background-color: #32506d;
+}
+a.tumblr:hover {
+	background-color: #42607d;
 }
