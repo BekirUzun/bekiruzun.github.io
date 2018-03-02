@@ -1,4 +1,4 @@
-# bekiruzun.github.io
+# bekiruzun.com
 Personal webpage and blog.
 
 # Credits

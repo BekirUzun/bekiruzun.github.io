@@ -5,7 +5,7 @@ subtitle:
 email: # example@example.com
 description: Merhaba ben Bekir. Bilgisayar mühendisliği okuyorum ve kodlamayı seviyorum.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://bekiruzun.github.io"
+url: "https://bekiruzun.com"
 
 # Plugins
 plugins:
