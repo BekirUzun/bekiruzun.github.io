@@ -1,4 +1,4 @@
-# [bekiruzun.com](bekiruzun.com)
+# [https://bekiruzun.com](https://bekiruzun.com)
 Personal webpage and blog.
 
 # Credits
