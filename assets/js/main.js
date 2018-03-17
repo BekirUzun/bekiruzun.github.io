@@ -267,4 +267,6 @@
 		});
 	});
 
+	var projects = mixitup(document.querySelector('.container'));
+	
 })(jQuery);
