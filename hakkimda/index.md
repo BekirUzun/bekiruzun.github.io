@@ -7,7 +7,7 @@ title: Hakkımda
 
 <hr class="major" />
 
-<h1>Projelerim</h1>
+<h1 id="work">Projelerim</h1>
 
 <div class="controls">
 	<button type="button" class="control" data-filter="all">Tümü</button>
