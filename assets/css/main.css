@@ -4553,3 +4553,182 @@ a.tumblr {
 a.tumblr:hover {
 	background-color: #42607d;
 }
+
+
+/* mixitup.css */
+
+/* Controls
+---------------------------------------------------------------------- */
+
+.controls {
+    /*padding: 1rem;*/
+    /*background: #333;*/
+    /*font-size: 1rem;*/
+    text-align: center;
+}
+
+.control {
+    position: relative;
+    display: inline-block;
+    width: 5rem;
+    height: 2.7rem;
+    background: #444;
+    cursor: pointer;
+    /*font-size: 0.1px;*/
+    transition: background 0.2s, color 0.4s;
+
+    background-color: transparent;
+    border-radius: unset;
+    
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: initial;
+    letter-spacing: unset;
+    line-height: unset;
+    padding: unset;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.control:hover {
+    /*background: #3f3f3f;*/
+    color: #f56a6a !important;
+    background-color: rgba(245, 106, 106, 0.2);
+}
+
+.control[data-filter]:after {
+    /*content: '';*/
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    border: 2px solid currentColor;
+    border-radius: 2px;
+    background: currentColor;
+    transition: background-color 150ms, border-color 150ms;
+}
+
+.control[data-sort]:after {
+    /*content: '';*/
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    transform:  translateY(1px) rotate(45deg);
+}
+
+.control[data-sort*=":desc"]:after {
+    transform:  translateY(-4px) rotate(-135deg);
+}
+
+.mixitup-control-active {
+    /*background: #393939;*/
+    background-color: #f56a6a;
+    color: white !important;
+}
+
+.mixitup-control-active:hover {
+    /*background: #393939;*/
+    background-color: #f56a6a;
+    color: white !important;
+}
+
+
+
+.mixitup-control-active[data-filter]:after {
+    background: transparent;
+}
+
+.control:first-of-type {
+    border-radius: 0.375em 0 0 0.375em;
+}
+
+.control:last-of-type {
+    border-radius: 0 0.375em 0.375em 0;
+}
+
+.control[data-filter] + .control[data-sort] {
+    margin-left: .75rem;
+}
+
+
+/* Container
+---------------------------------------------------------------------- */
+
+.container {
+    padding: 1rem;
+    text-align: justify;
+    /*font-size: 0.1px;*/
+}
+
+.container:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/* Target Elements
+---------------------------------------------------------------------- */
+
+.mix,
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mix {
+    background: #fff;
+    box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.1);
+    border-top: .5rem solid currentColor;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.mix h3 {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.mix p {
+    margin: 1rem;
+    color: #7f888f;
+}
+
+.mix.okul {
+    color: #91e6c7;
+}
+
+.mix.kisisel {
+    /*color: #5ecdde;*/
+    color: #f56a6a;
+}
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* 1 Column */
+.mix,
+.gap {
+    width: 100%;
+}
+
+/* 2 Columns */
+@media screen and (min-width: 541px) {
+    .mix,
+    .gap {
+        width: calc(100%/2 - (((2 - 1) * 1rem) / 3));
+    }
+}
+
+/* 3 Columns */
+@media screen and (min-width: 1281px) {
+    .mix,
+    .gap {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+    }
+}
