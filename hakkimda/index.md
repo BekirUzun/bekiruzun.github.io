@@ -19,49 +19,58 @@ title: Hakkımda
 	<div class="mix kisisel">
 		<h3>AzLyrics+</h3>
 		<p>AzLyrics.com için geliştirdiğim bir kullanıcı betiği. Sitenin temasını özelleştirilebilir hale getirip otomatik kaydırma gibi birkaç ek özellik ekliyor.</p>
+		<a href="https://github.com/BekirUzun/AzLyricsPlus" class="button">Proje Sayfası</a>
 	</div>
 
 	<div class="mix kisisel">
-	<h3>Trivia Crack Bot</h3>
-	<p>Trivia Crack oyunu otomatik oynayan, sınırsız can hilesi bulunan bir kullanıcı betiği. Botu aktifleştirmeden tüm soruların cevaplarını gösterme özelliğide bulunuyor.</p>
+		<h3>Trivia Crack Bot</h3>
+		<p>Trivia Crack oyunu otomatik oynayan, sınırsız can hilesi bulunan bir kullanıcı betiği. Botu aktifleştirmeden tüm soruların cevaplarını gösterme özelliğide bulunuyor.</p>
+		<!-- <a href="https://github.com/BekirUzun/TriviaCrackBot" class="button">Proje Sayfası</a> -->
 	</div>
 
 	<div class="mix kisisel">
-	<h3>Ege EBYS+</h3>
-	<p>Ege Üniversitesi Öğrenci Giriş sisteminin arayüzünü değiştiren ve istediğiniz arkaplan resmini kullanmanıza olanak sağlayan kullanıcı betiği.</p>
+		<h3>Ege EBYS+</h3>
+		<p>Ege Üniversitesi Öğrenci Giriş sisteminin arayüzünü değiştiren ve istediğiniz arkaplan resmini kullanmanıza olanak sağlayan kullanıcı betiği.</p>
+		<a href="https://bekiruzun.com/EgeEBYSPlus/" class="button">Proje Sayfası</a>
 	</div>
 
 	<div class="mix okul">
-	<h3>Employment Platform</h3>
-	<p>C# ile yazdığım iş bulma (sözde) platformu. </p>
+		<h3>Employment Platform</h3>
+		<p>C# ile yazdığım iş bulma (sözde) platformu. </p>
+		<a href="https://github.com/BekirUzun/EmploymentPlatform" class="button">Proje Sayfası</a>
 	</div>
 
 	<div class="mix okul">
-	<h3>BigAdd Interpreter</h3>
-	<p>C ile yazdığımız basit bir dil yorumlayıcısı (interpreter). Dilin basit olması sebebiyle parse tree kullanmadık. </p>
+		<h3>BigAdd Interpreter</h3>
+		<p>C ile yazdığımız basit bir dil yorumlayıcısı (interpreter). Dilin basit olması sebebiyle parse tree kullanmadık. </p>
+		<a href="https://github.com/silasimsek/BigAdd" class="button">Proje Sayfası</a>
 	</div>
 
 	<div class="mix okul">
-	<h3>Academic Information System</h3>
-	<p>C# ile yazdığımız akademisyen bilgi sistemi. </p>
+		<h3>Academic Information System</h3>
+		<p>C# ile yazdığımız akademisyen bilgi sistemi. </p>
+		<a href="https://github.com/BekirUzun/AcademicIS" class="button">Proje Sayfası</a>
 	</div>
 
 	<div class="mix kisisel">
-	<h3>Otoin</h3>
-	<p>Otomatik indirme zamanlayıcısı. Belirlediğiniz programları belirlediğiniz saatde açar/kapatır. Gece sınırsız internetten faydalanmak için geliştirdim.</p>
+		<h3>Otoin</h3>
+		<p>Otomatik indirme zamanlayıcısı. Belirlediğiniz programları belirlediğiniz saatde açar/kapatır. Gece sınırsız internetten faydalanmak için geliştirdim.</p>
+		<a href="https://github.com/BekirUzun/Otoin" class="button">Proje Sayfası</a>
 	</div>
 
 	<div class="mix okul">
-	<h3>Chatbot</h3>
-	<p>Online satış senaryosu için sözde chatbot (if-else). Bu projede tasarım desenleri ve diğer OOP yöntemleri çalışılmıştır. </p>
+		<h3>Chatbot</h3>
+		<p>Online satış senaryosu için sözde chatbot (if-else). Bu projede tasarım desenleri ve diğer OOP yöntemleri çalışılmıştır. </p>
+		<a href="https://github.com/beratgumus/Chatbot" class="button">Proje Sayfası</a>
 	</div>
 
 	<div class="mix kisisel">
-	<h3>Gfycat Album</h3>
-	<p>Gfycat videolarını organize etmek (paylaşmak) için PHP (basit bir MVC yaklaşımı) ile yazılmış mobil uyumlu bir proje. </p>
+		<h3>Gfycat Album</h3>
+		<p>Gfycat videolarını organize etmek (paylaşmak) için PHP (basit bir MVC yaklaşımı) ile yazılmış mobil uyumlu bir proje. </p>
+		<a href="https://github.com/BekirUzun/GfycatAlbum" class="button">Proje Sayfası</a>
 	</div>
 
 	<div class="gap"></div>
 	<div class="gap"></div>
 	<div class="gap"></div>
-	</div>
+</div>

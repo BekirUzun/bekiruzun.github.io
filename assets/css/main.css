@@ -4699,6 +4699,10 @@ a.tumblr:hover {
     color: #7f888f;
 }
 
+.mix a {
+	margin-bottom: 1rem;
+}
+
 .mix.okul {
     color: #91e6c7;
 }
@@ -4715,6 +4719,10 @@ a.tumblr:hover {
 .mix,
 .gap {
     width: 100%;
+}
+
+.mix {
+	text-align: center;
 }
 
 /* 2 Columns */
