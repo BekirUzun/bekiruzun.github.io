@@ -4704,11 +4704,19 @@ a.tumblr:hover {
 }
 
 .mix.okul {
-    color: #91e6c7;
+    color: #6A81F5;
+}
+
+.mix.okul a {
+    color: #6A81F5 !important;
+    box-shadow: inset 0 0 0 2px #6A81F5;
+}
+
+.mix.okul a:hover {
+    background-color: rgba(106, 129, 245, 0.1);
 }
 
 .mix.kisisel {
-    /*color: #5ecdde;*/
     color: #f56a6a;
 }
 
