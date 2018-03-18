@@ -55,6 +55,12 @@ title: Hakkımda
 	<h3>Chatbot</h3>
 	<p>Online satış senaryosu için sözde chatbot (if-else). Bu projede tasarım desenleri ve diğer OOP yöntemleri çalışılmıştır. </p>
 	</div>
+
+	<div class="mix kisisel">
+	<h3>Gfycat Album</h3>
+	<p>Gfycat videolarını organize etmek (paylaşmak) için PHP (basit bir MVC yaklaşımı) ile yazılmış mobil uyumlu bir proje. </p>
+	</div>
+
 	<div class="gap"></div>
 	<div class="gap"></div>
 	<div class="gap"></div>
